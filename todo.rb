@@ -1,8 +1,7 @@
 require 'sinatra'
-require 'sinatra/reloader'
+require 'sinatra/reloader' if development?
 require 'tilt/erubis'
 require 'sinatra/content_for'
-require 'pry'
 
 # Return an error message is name is invalid, otherwise return nil.
 def error_for_list_name(name)
