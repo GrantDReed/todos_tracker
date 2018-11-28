@@ -100,6 +100,7 @@ end
 # View a list of lists
 get '/lists' do
   @lists = session[:lists]
+  # test comment
   erb :lists
 end
 
